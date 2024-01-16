@@ -5,8 +5,10 @@ Template Project for starting up CRUD API with Django Rest Framework
 ## Customization Steps
 
 - DO NOT migrate yet
-- add additional dependencies as needed
-  - Re-export requirements.txt as needed
+
+[//]: # (- add additional dependencies as needed)
+
+[//]: # (  - Re-export requirements.txt as needed)
 - change `things` folder to the app name of your choice
 - Search through entire code base for `Thing`,`Things` and `things` to modify code to use your resource
   - `project/settings.py`
