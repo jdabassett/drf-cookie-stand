@@ -7,6 +7,7 @@ Jacob Bassett
 Use httpie to make the following requests from your terminal.
 
 
+
 Install httpie.
 ```bash
 # to install httpie in your local mac environment
