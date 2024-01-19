@@ -1,14 +1,14 @@
 {
     "builds": [
         {
-            "src": "cookie_stand/wsgi.py",
+            "src": "project/wsgi.py",
             "use": "@vercel/python"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "cookie_stand/wsgi.py"
+            "dest": "project/wsgi.py"
         }
     ]
 }
