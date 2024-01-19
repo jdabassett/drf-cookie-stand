@@ -13,6 +13,12 @@ RESOURCE_URI = os.getenv("TEST_RESOURCE_URI") or "things"
 USERNAME = os.getenv("TEST_USERNAME")
 PASSWORD = os.getenv("TEST_PASSWORD")
 
+TEST_API_HOST = http://localhost:8000
+TEST_RESOURCE_URI = cookiestands
+TEST_USERNAME = admin
+TEST_PASSWORD = 1234
+
+
 
 class ApiTester:
     """CLI for testing API

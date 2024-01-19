@@ -3,6 +3,22 @@
 # Author:
 Jacob Bassett
 
+# Tests:
+If you clone down this repo you can run the following command in to run the unit tests and expect the follow output.
+
+```bash
+(.venv) ➜  drf-cookie-stand git:(dev) ✗ python manage.py test
+Found 7 test(s).
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 1.360s
+
+OK
+Destroying test database for alias 'default'...
+```
+
 # Usage:
 Use httpie to make the following requests from your terminal.
 
