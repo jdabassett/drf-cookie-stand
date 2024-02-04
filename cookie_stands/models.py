@@ -23,7 +23,7 @@ class CookieStand(models.Model):
 
     def save(self, *args, **kwargs):
         print("save triggered", self.minimum_customers_per_hour, self.maximum_customers_per_hour, self.average_cookies_per_sale)
-        if not self.pk and not self.hourly_sales:
+        if not self.hourly_sales:
             min = self.minimum_customers_per_hour
             max = self.maximum_customers_per_hour
 
