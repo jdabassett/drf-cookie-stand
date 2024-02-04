@@ -22,14 +22,15 @@ class CookieStand(models.Model):
         return reverse('cookie_stand_detail', args=[str(self.id)])
 
     def save(self, *args, **kwargs):
-        if not self.pk and not self.hourly_sales:
+        print("save triggered", self.minimum_customers_per_hour, self.maximum_customers_per_hour, self.average_cookies_per_sale)
+        if not self.hourly_sales:
             min = self.minimum_customers_per_hour
             max = self.maximum_customers_per_hour
 
-            cookies_each_hour = [
-                int(random.randint(min, max) * self.average_cookies_per_sale)
-                for _ in range(14)
-            ]
+            cookies_each_hour = []
+            for _ in range(14):
+                new = int(random.randint(min,max))*self.average_cookies_per_sale
+                cookies_each_hour.append(new)
 
             self.hourly_sales = cookies_each_hour
 
