@@ -15,14 +15,17 @@ urlpatterns = [
     path("api/token/", MyTokenObtainPairView.as_view(), name="token_pair"),
     path("api/token/refresh/", jwt_views.TokenRefreshView.as_view(), name="token_refresh"),
 
+    # sign up
+    path("api/register/", include("accounts.urls")),
+
     # frontend
-    path("cookiestands/", include("cookie_stands.urls_front")),
+    # path("cookiestands/", include("cookie_stands.urls_front")),
 
     # navbar
-    path("", TemplateView.as_view(template_name="home.html"), name="home"),
-    path("about/", TemplateView.as_view(template_name="about.html"), name="about"),
+    # path("", TemplateView.as_view(template_name="home.html"), name="home"),
+    # path("about/", TemplateView.as_view(template_name="about.html"), name="about"),
 
     # user
-    path("accounts/", include("accounts.urls")),
-    path("accounts/", include("django.contrib.auth.urls")),
+    # path("accounts/", include("accounts.urls")),
+    # path("accounts/", include("django.contrib.auth.urls")),
 ]
