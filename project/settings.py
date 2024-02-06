@@ -190,10 +190,10 @@ SIMPLE_JWT = {
 
 # django-cors-headers
 CORS_ALLOWED_ALL_ORIGINS = env.bool("ALLOW_ALL_ORIGINS")
-CORS_ALLOWED_ORIGINS = tuple(env.list("ALLOWED_ORIGINS", default=[]))
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:3000",
-# ]
+# CORS_ALLOWED_ORIGINS = tuple(env.list("ALLOWED_ORIGINS", default=[]))
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000","https://cookie-stand-admin-seven-blush.vercel.app/"
+]
 
 # TAILWIND
 STATICFILES_DIRS = [
